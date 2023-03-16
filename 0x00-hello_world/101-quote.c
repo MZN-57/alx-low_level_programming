@@ -6,7 +6,7 @@
  * Describtion: Write a C program that prints exactly
  *
  *Return: Always 1 (Success)
- * */
+ */
 
 int main(void)
 {
