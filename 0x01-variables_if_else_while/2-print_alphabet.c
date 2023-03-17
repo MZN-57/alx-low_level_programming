@@ -10,7 +10,7 @@ int main(void)
 
 	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-		putchar(ch);
+		putchar(lc);
 	}
 	putchar('\n');
 	return (0);
