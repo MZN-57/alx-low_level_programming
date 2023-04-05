@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * _memset - fill a block of memory with a specific value
- * 
+ * @s: starting address of memory to be filled`
+ * @b: the value we want
+ * @n: the count on numbers
  *
  *
  * Return: changed array with new value for n bytes
