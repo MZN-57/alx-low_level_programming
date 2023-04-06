@@ -21,7 +21,7 @@ int _sqrt_recursion(int n)
 /**
  * actual_sqrt_recursion - natural using recursion
  *
- * 
+ *
  * @n: clculatinf the square root
  *
  * @i: helpful in itteration
