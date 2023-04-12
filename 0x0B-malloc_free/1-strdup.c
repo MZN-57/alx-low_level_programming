@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
  * _strdup - new duplicated memory
  * @original_string: char
