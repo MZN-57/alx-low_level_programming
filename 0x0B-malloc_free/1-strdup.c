@@ -1,31 +1,27 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
 /**
- * _strdup -  new memory space duplicated
- * 
- * @str: char
- * 
+ * _strdup - new duplicated memory
+ * @original_string: char
  * Return: 0
+ *
  */
-char *_strdup(char *str)
+char *_strdup(char *original_string)
 {
-	char B;
-	int i, r = 0;
+    char *new_string;
+    int original_length = 0, i = 0;
 
-	if (str == NULL)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
+    if (original_string == NULL)
+        return NULL;
 
-	B = malloc(sizeof(char) * (i + 1));
+    while (original_string[original_length] != '\0')
+        original_length++;
 
-	if (B == NULL)
-		return (NULL);
+    new_string = malloc(sizeof(char) * (original_length + 1));
 
-	for (r = 0; str[r]; r++)
-		B[r] = str[r];
+    if (new_string == NULL)
+        return NULL;
 
-	return (B);
+    for (i = 0; original_string[i]; i++)
+        new_string[i] = original_string[i];
+
+    return new_string;
 }
