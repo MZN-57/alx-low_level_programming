@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - make the new memory duplicated
- *
- * @str: assigned char
- *
+ * _strdup -  new memory space duplicated
+ * 
+ * @str: char
+ * 
  * Return: 0
  */
 char *_strdup(char *str)
 {
-	char *q;
-	int i, j = 0;
+	char B;
+	int i, r = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	while (str[i] != '\0')
 		i++;
 
-	aaa = malloc(sizeof(char) * (i + 1));
+	B = malloc(sizeof(char) * (i + 1));
 
-	if (q == NULL)
+	if (B == NULL)
 		return (NULL);
 
-	for (j = 0; str[j]; j++)
-		q[j] = str[j];
+	for (r = 0; str[r]; r++)
+		B[r] = str[r];
 
-	return (q);
+	return (B);
 }
