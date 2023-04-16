@@ -11,19 +11,19 @@
  */
 int check_integer(char *str)
 {
-    unsigned int i = 0;
+	unsigned int i = 0;
 
-    while (i < strlen(str))
-    {
-        if (!isdigit(str[i]))
-        {
-            return (0);
-        }
+	while (i < strlen(str))
+	{
+		if (!isdigit(str[i]))
+		{
+			return (0);
+		}
 
-        i++;
-    }
+		i++;
+	}
 
-    return (1);
+	return (1);
 }
 
 /**
@@ -35,25 +35,25 @@ int check_integer(char *str)
  */
 int main(int argc, char **argv)
 {
-    int i = 1, num, sum = 0;
+	int i = 1, num, sum = 0;
 
-    while (i < argc)
-    {
-        if (check_integer(argv[i]))
-        {
-            num = atoi(argv[i]);
-            sum += num;
-        }
-        else
-        {
-            printf("Error\n");
-            return (1);
-        }
+	while (i < argc)
+	{
+		if (check_integer(argv[i]))
+		{
+			num = atoi(argv[i]);
+			sum += num;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 
-        i++;
-    }
+		i++;
+	}
 
-    printf("%d\n", sum);
+	printf("%d\n", sum);
 
-    return (0);
+	return (0);
 }
