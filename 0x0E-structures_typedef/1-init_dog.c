@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * init_dog - initializaation 
+ * init_dog - initializaation
  * @d: points to the init
  * @name: name of the dog
  * @age: age of the dog
