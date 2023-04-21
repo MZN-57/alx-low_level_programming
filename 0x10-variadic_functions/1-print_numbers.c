@@ -3,7 +3,8 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - Prints a variable number of integers, followed by a new line.
+ * print_numbers - Prints a variable number of integers,
+ * followed by a new line.
  * @separator: The string to be printed between integers.
  * @n: The number of integers passed to the function.
  * @...: A variable number of integers to be printed.
