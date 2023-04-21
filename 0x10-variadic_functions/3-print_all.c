@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * print_all - Prints a variable number of arguments, 
+ * print_all - Prints a variable number of arguments,
  * whose types are determined by a format string.
- * @format: A string that represents the format of the arguments 
+ * @format: A string that represents the format of the arguments
  * to be printed.
  */
 void print_all(const char * const format, ...)
