@@ -1,12 +1,15 @@
-.section .data
-format:
-	.ascii "Hello, Holberton\n\0"
-.section .text
-.global main
+section .data
+msg db 'Hello, Holberton', 0
+fmt db '%s\n', 0
+
+section .text
+global main
 extern printf
+
 main:
-	movl $format, %edi
-	xorl %eax, %eax
+	push msg
+	push fmt
 	call printf
-	xorl %eax, %eax
+	add rsp, 16
+	mov eax, 0
 	ret
