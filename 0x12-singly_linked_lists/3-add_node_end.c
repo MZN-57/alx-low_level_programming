@@ -5,7 +5,7 @@
 /**
  * add_node_end - at the end of a linked list
  * @head: to the list_t list
- * @str: string 
+ * @str: string
  *
  * Return:new element's address.
  */
