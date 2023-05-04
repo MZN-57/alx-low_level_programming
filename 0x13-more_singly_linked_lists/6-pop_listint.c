@@ -5,7 +5,8 @@
  *
  * @head: Pointer to a pointer to the first node in the list.
  *
- * Return: The integer value stored in the deleted node, or 0 if the list is empty.
+ * Return: The integer value stored in the deleted node,
+ * or 0 if the list is empty.
  */
 int pop_listint(listint_t **head)
 {
